@@ -65,21 +65,21 @@
 
         combo_jz {
             timeout-ms = <1000>;
-            layers = <2>;
+            layers = <4>;
             key-positions = <49 56>; //fn+j+z
             bindings = <&long_press_recover 0 0>;
         };
 
         combo_xl {
             timeout-ms = <1000>;
-            layers = <2>;
+            layers = <4>;
             key-positions = <57 51>; //fn+x+l
             bindings = <&long_press_change 0 0>;
         };
 
         combo_b {
             timeout-ms = <1000>;
-            layers = <2>;
+            layers = <4>;
 
             //slow-release = <true>;
 
@@ -89,7 +89,7 @@
 
         combo_win_l {
             timeout-ms = <1000>;
-            layers = <2>;
+            layers = <4>;
 
             //slow-release = <true>;
 
@@ -99,49 +99,49 @@
 
         combo_t0 {
             timeout-ms = <10 >;
-            layers = <3>;
+            layers = <5>;
             key-positions = <80 90>;
-            bindings = <&to 2>;
+            bindings = <&to 4>;
         };
 
         combo_t1 {
             timeout-ms = <10 >;
-            layers = <3>;
+            layers = <5>;
             key-positions = <80 91>;
-            bindings = <&tog 2>;
+            bindings = <&tog 4>;
         };
 
         combo_t2 {
             timeout-ms = <10 >;
-            layers = <3>;
+            layers = <5>;
             key-positions = <80 92>;
-            bindings = <&sl 2>;
+            bindings = <&sl 4>;
         };
 
         combo_t3 {
             timeout-ms = <10 >;
-            layers = <3>;
+            layers = <5>;
             key-positions = <70 93>;
-            bindings = <&lt 2 SPACE>;
+            bindings = <&lt 4 SPACE>;
         };
 
         combo_t4 {
             timeout-ms = <10 >;
-            layers = <3>;
+            layers = <5>;
             key-positions = <81 94>;
             bindings = <&sk LSHIFT>;
         };
 
         combo_t5 {
             timeout-ms = <10 >;
-            layers = <3>;
+            layers = <5>;
             key-positions = <81 93>;
             bindings = <&mt LSHIFT SPACE>;
         };
 
         combo_t6 {
             timeout-ms = <10 >;
-            layers = <3>;
+            layers = <5>;
             key-positions = <81 93>;
             bindings = <&gresc>;
         };
@@ -245,6 +245,16 @@
         #binding-cells = <1>;
     };
 
+    ht_layer: ht_layer {
+        compatible = "zmk,behavior-hold-tap";
+        label = "HT_LAYER";
+        bindings = <&mo>, <&lt>;
+
+        #binding-cells = <2>;
+        flavor = "tap-preferred";
+        tapping-term-ms = <200>;
+    };
+
     behaviors {
     };
 
@@ -253,34 +263,58 @@
 
         //mac
 
-        Windows {
+        win_default {
             bindings = <
 &kp ESC    &kp F1        &kp F2        &kp F3        &kp F4         &kp F5  &kp F6    &kp F7  &kp F8     &kp F9     &kp F10   &kp F11    &kp F12    &kp DEL
 &kp GRAVE  &kp N1        &kp N2        &kp N3        &kp N4         &kp N5  &kp N6    &kp N7  &kp N8     &kp N9     &kp N0    &kp MINUS  &kp EQUAL  &kp BSPC
 &kp TAB    &kp Q         &kp W         &kp E         &kp R          &kp T   &kp Y     &kp U   &kp I      &kp O      &kp P     &kp LBKT   &kp RBKT   &kp BSLH
 &kp CLCK   &kp A         &kp S         &kp D         &kp F          &kp G   &kp H     &kp J   &kp K      &kp L      &kp SEMI  &kp SQT    &kp RET
 &kp LSHFT  &kp Z         &kp X         &kp C         &kp V          &kp B   &kp N     &kp M   &kp COMMA  &kp DOT    &kp FSLH  &kp RSHFT
-&kp LCTRL  &kp LGUI      &kp LALT      &kp SPACE     &kp RALT       &mo 2   &kp LEFT  &kp UP  &kp DOWN   &kp RIGHT
+&kp LCTRL  &kp LGUI      &kp LALT      &kp SPACE     &kp RALT       &mo 4   &kp LEFT  &kp UP  &kp DOWN   &kp RIGHT
 &none      &out OUT_BLE  &out OUT_24G  &out OUT_CHG  &out OUT_CHGD
             >;
         };
 
-        Mac {
+        mac_default {
             bindings = <
 &kp ESC    &kp F1        &kp F2        &kp F3        &kp F4         &kp F5  &kp F6    &kp F7  &kp F8     &kp F9     &kp F10   &kp F11    &kp F12    &kp DEL
 &kp GRAVE  &kp N1        &kp N2        &kp N3        &kp N4         &kp N5  &kp N6    &kp N7  &kp N8     &kp N9     &kp N0    &kp MINUS  &kp EQUAL  &kp BSPC
 &kp TAB    &kp Q         &kp W         &kp E         &kp R          &kp T   &kp Y     &kp U   &kp I      &kp O      &kp P     &kp LBKT   &kp RBKT   &kp BSLH
 &kp CLCK   &kp A         &kp S         &kp D         &kp F          &kp G   &kp H     &kp J   &kp K      &kp L      &kp SEMI  &kp SQT    &kp RET
 &kp LSHFT  &kp Z         &kp X         &kp C         &kp V          &kp B   &kp N     &kp M   &kp COMMA  &kp DOT    &kp FSLH  &kp RSHFT
-&kp LCTRL  &uc LALT      &uc LCMD      &kp SPACE     &uc RCMD       &mo 2   &kp LEFT  &kp UP  &kp DOWN   &kp RIGHT
+&kp LCTRL  &uc LALT      &uc LCMD      &kp SPACE     &uc RCMD       &mo 4   &kp LEFT  &kp UP  &kp DOWN   &kp RIGHT
 &mo 0      &out OUT_BLE  &out OUT_24G  &out OUT_CHG  &out OUT_CHGD
+            >;
+        };
+
+        win_custom {
+            bindings = <
+&kp ESC        &kp F1        &kp F2        &kp F3        &kp F4         &kp F5  &kp F6    &kp F7  &kp F8     &kp F9     &kp F10   &kp F11    &kp F12    &kp DEL
+&kp GRAVE      &kp N1        &kp N2        &kp N3        &kp N4         &kp N5  &kp N6    &kp N7  &kp N8     &kp N9     &kp N0    &kp MINUS  &kp EQUAL  &kp BSPC
+&kp TAB        &kp Q         &kp W         &kp E         &kp R          &kp T   &kp Y     &kp U   &kp I      &kp O      &kp P     &kp LBKT   &kp RBKT   &kp BSLH
+&ht_layer 5 6  &kp A         &kp S         &kp D         &kp F          &kp G   &kp H     &kp J   &kp K      &kp L      &kp SEMI  &kp SQT    &kp RET
+&kp LSHFT      &kp Z         &kp X         &kp C         &kp V          &kp B   &kp N     &kp M   &kp COMMA  &kp DOT    &kp FSLH  &kp RSHFT
+&kp LCTRL      &kp LGUI      &kp LALT      &kp SPACE     &kp RALT       &mo 4   &kp LEFT  &kp UP  &kp DOWN   &kp RIGHT
+&none          &out OUT_BLE  &out OUT_24G  &out OUT_CHG  &out OUT_CHGD
+            >;
+        };
+
+        mac_custom {
+            bindings = <
+&kp ESC        &kp F1        &kp F2        &kp F3        &kp F4         &kp F5  &kp F6    &kp F7  &kp F8     &kp F9     &kp F10   &kp F11    &kp F12    &kp DEL
+&kp GRAVE      &kp N1        &kp N2        &kp N3        &kp N4         &kp N5  &kp N6    &kp N7  &kp N8     &kp N9     &kp N0    &kp MINUS  &kp EQUAL  &kp BSPC
+&kp TAB        &kp Q         &kp W         &kp E         &kp R          &kp T   &kp Y     &kp U   &kp I      &kp O      &kp P     &kp LBKT   &kp RBKT   &kp BSLH
+&ht_layer 5 6  &kp A         &kp S         &kp D         &kp F          &kp G   &kp H     &kp J   &kp K      &kp L      &kp SEMI  &kp SQT    &kp RET
+&kp LSHFT      &kp Z         &kp X         &kp C         &kp V          &kp B   &kp N     &kp M   &kp COMMA  &kp DOT    &kp FSLH  &kp RSHFT
+&kp LCTRL      &uc LALT      &uc LCMD      &kp SPACE     &uc RCMD       &mo 4   &kp LEFT  &kp UP  &kp DOWN   &kp RIGHT
+&mo 0          &out OUT_BLE  &out OUT_24G  &out OUT_CHG  &out OUT_CHGD
             >;
         };
 
         keyboard_functions {
             bindings = <
 &trans  &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC  &uc LG(TAB)     &uc LG(E)       &kp C_AC_SEARCH  &uc LG(L)  &kp C_PREVIOUS  &kp C_PLAY_PAUSE  &kp C_NEXT  &kp C_MUTE  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &bootloader
-&trans  &bt_pair_0 0 0        &bt_pair_1 0 0        &bt_pair_2 0 0  &bt_pair_3 0 0  &trans           &trans     &trans          &trans            &trans      &trans      &trans             &kp C_AL_CALC    &trans
+&trans  &bt_pair_0 0 0        &bt_pair_1 0 0        &bt_pair_2 0 0  &bt_pair_3 0 0  &trans           &trans     &trans          &trans            &to 0       &to 1       &to 2              &to 3            &trans
 &trans  &trans                &trans                &trans          &trans          &trans           &trans     &trans          &kp INS           &trans      &trans      &trans             &trans           &uc LG(LS(S))
 &trans  &trans                &trans                &trans          &trans          &trans           &trans     &trans          &trans            &trans      &trans      &trans             &trans
 &trans  &trans                &trans                &trans          &trans          &trans           &trans     &trans          &trans            &trans      &trans      &uc LG(DOT)
@@ -289,7 +323,19 @@
             >;
         };
 
-        custom_layer_1 {
+        layer_5 {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans    &trans        &trans     &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans    &trans        &trans     &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans    &trans        &trans     &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &kp LEFT  &kp DOWN  &kp UP_ARROW  &kp RIGHT  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans    &trans        &trans     &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans    &trans        &trans
+&none   &none   &none   &none   &none
+            >;
+        };
+
+        layer_6 {
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
@@ -297,7 +343,7 @@
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&none   &none   &none   &none   &none
+&trans  &trans  &trans  &trans  &trans
             >;
         };
     };
