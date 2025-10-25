@@ -1,0 +1,15 @@
+Row;Col1;Col2;Col3;Col4;Col5;Col6;Col7;Col8;Col9;Col10;Col11;Col12;Col13;Col14
+Function Row - Position;0;1;2;3;4;5;6;7;8;9;10;11;12;13
+Function Row - Key;ESC;F1;F2;F3;F4;F5;F6;F7;F8;F9;F10;F11;F12;DEL
+Number Row - Position;14;15;16;17;18;19;20;21;22;23;24;25;26;27
+Number Row - Key;GRAVE;1;2;3;4;5;6;7;8;9;0;MINUS;EQUAL;BSPC
+QWERTY Top - Position;28;29;30;31;32;33;34;35;36;37;38;39;40;41
+QWERTY Top - Key;TAB;Q;W;E;R;T;Y;U;I;O;P;LBKT;RBKT;BSLH
+Home Row - Position;42;43;44;45;46;47;48;49;50;51;52;53;;54
+Home Row - Key;CLCK;A;S;D;F;G;H;J;K;L;SEMI;SQT;;ENTER
+Bottom Letter Row - Position;55;56;57;58;59;60;61;62;63;64;65;;66;
+Bottom Letter Row - Key;LSHFT;Z;X;C;V;B;N;M;COMMA;DOT;FSLH;;RSHFT;
+Bottom Modifier Row - Position;67;68;69;70;;;;;71;72;73;74;75;76
+Bottom Modifier Row - Key;LCTRL;LALT;LCMD;SPACE;;;;;RCMD;MO1;LEFT;UP;DOWN;RIGHT
+Special Bottom Row - Position;77;78;79;80;81;;;;;;;;
+Special Bottom Row - Key;MO2;OUT_BLE;OUT_24G;OUT_CHG;OUT_CHGD;;;;;;;;

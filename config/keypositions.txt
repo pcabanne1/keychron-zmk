@@ -1,0 +1,96 @@
+Keychron B1 Key Position Map
+Based on the default layer, here's the complete key position mapping:
+
+Row 1 (Function Row) - Positions 0-13
+0:  ESC
+1:  F1 (Brightness Down)
+2:  F2 (Brightness Up)
+3:  F3 (Show All Windows)
+4:  F4 (Launch Pad)
+5:  F5 (Search)
+6:  F6 (Lock)
+7:  F7 (Previous Track)
+8:  F8 (Play/Pause)
+9:  F9 (Next Track)
+10: F10 (Mute)
+11: F11 (Volume Down)
+12: F12 (Volume Up)
+13: DEL
+Row 2 (Number Row) - Positions 14-27
+14: ` (Grave)
+15: 1
+16: 2
+17: 3
+18: 4
+19: 5
+20: 6
+21: 7
+22: 8
+23: 9
+24: 0
+25: - (Minus)
+26: = (Equal)
+27: BACKSPACE
+Row 3 (QWERTY Top) - Positions 28-41
+28: TAB
+29: Q
+30: W
+31: E
+32: R
+33: T
+34: Y
+35: U
+36: I
+37: O
+38: P
+39: [ (Left Bracket)
+40: ] (Right Bracket)
+41: \ (Backslash)
+Row 4 (Home Row) - Positions 42-54
+42: CAPS LOCK
+43: A
+44: S
+45: D
+46: F
+47: G
+48: H
+49: J
+50: K
+51: L
+52: ; (Semicolon)
+53: ' (Single Quote)
+54: ENTER
+Row 5 (Bottom Letter Row) - Positions 55-67
+55: LEFT SHIFT
+56: Z
+57: X
+58: C
+59: V
+60: B
+61: N
+62: M
+63: , (Comma)
+64: . (Period)
+65: / (Forward Slash)
+66: RIGHT SHIFT
+Row 6 (Bottom Modifier Row) - Positions 67-76
+67: LEFT CTRL
+68: LEFT ALT (user_custom)
+69: LEFT CMD/WIN (user_custom)
+70: SPACE
+71: RIGHT CMD/WIN (user_custom)
+72: MO 1 (Function Layer)
+73: LEFT ARROW
+74: UP ARROW
+75: DOWN ARROW
+76: RIGHT ARROW
+Special Bottom Row - Positions 77-81
+77: MO 2 (Windows Layer)
+78: OUT_BLE (Bluetooth Mode)
+79: OUT_24G (2.4GHz Mode)
+80: OUT_CHG (Charging Mode)
+81: OUT_CHGD (Charging Done)
+11234
+Total Keys: 82 positions (0-81)
+
+Note: The uc (user_custom) behavior on positions 68, 69, and 71 suggests these are special keys that may have hardware-specific functionality beyond standard key presses.
